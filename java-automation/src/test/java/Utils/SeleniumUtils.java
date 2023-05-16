@@ -14,8 +14,9 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public class SeleniumUtils {
-    public  static WebDriver getDriver(String browserType) {
+    public static WebDriver getDriver(String browserType) {
         WebDriver driver = null;
+
         switch (getBrowserEnumFromString(browserType)) {
             case CHROME:
                 WebDriverManager.chromedriver().setup();
@@ -42,9 +43,9 @@ public class SeleniumUtils {
         return driver;
     }
 
-    public static Browsers getBrowserEnumFromString (String browserType) {
-        for (Browsers browser: Browsers.values()) {
-            if (browserType.equalsIgnoreCase(browser.toString())) {
+    public static Browsers getBrowserEnumFromString(String browserType) {
+        for(Browsers browser: Browsers.values()) {
+            if(browserType.equalsIgnoreCase(browser.toString())) {
                 return browser;
             }
         }

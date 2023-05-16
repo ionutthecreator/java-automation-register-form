@@ -20,7 +20,7 @@ public class GoogleUITest {
     }
 
     @Test
-    public void SearchOnGoogleTest() throws InterruptedException{
+    public void SearchOnGoogleTest() throws InterruptedException {
         driver = new ChromeDriver();
         driver.get("http://google.com");
 
@@ -30,8 +30,7 @@ public class GoogleUITest {
         searchInput.sendKeys("Google Atelierul Digital");
         Thread.sleep(100);
         searchInput.sendKeys(Keys.ENTER);
-//        WebElement searchButton = driver.findElement(By.name("btnK"));
-//        searchButton.click();
     }
+
 
 }

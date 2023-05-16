@@ -9,11 +9,10 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class BaseUITest {
-
     WebDriver driver;
     String url;
-    String browser;
     String signUpPath;
+    String browser;
     String signUpPageUrl;
 
     @BeforeClass
@@ -26,11 +25,11 @@ public class BaseUITest {
 
         System.out.println("Default browser: " + browser);
         System.out.println("Page under test: " + signUpPageUrl);
+
     }
 
     @Test
-    public void Demo() {
+    public void demoTest() {
 
     }
-
 }
